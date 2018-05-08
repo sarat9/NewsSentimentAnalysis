@@ -1,0 +1,24 @@
+<p>
+  News Data of 30 days from {{olddate}} to {{currentdate}} !!!
+</p>
+
+
+<div class="row">
+<div class="loop" *ngFor="let news of AnalyisedArticles">
+<div class="panel panel-default colorChange">
+  <div class="panel-body reemKulfi">
+    <!-- Panel Content -->
+    <div>
+      <h4>Source Agency Name: <b>{{news.sourceAgency}}</b></h4>
+      <h4>Published Date: <b>{{news.publishedDate}}</b></h4>
+      <h4>Title: <b>{{news.title}}</b></h4>
+      <h4>Description: <b>{{news.descriptionText}}</b></h4>
+      <h4>Sentiment Score: <b>{{news.sentimentValue}}</b></h4>
+      <h4>Positive Score by Values: <b>{{news.positiveValues}}</b></h4>
+      <h4>Negative Score by Values: <b>{{news.negativeValues}}</b></h4>
+    </div>
+
+  </div>
+</div>
+</div>
+</div>
